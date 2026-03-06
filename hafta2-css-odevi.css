@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, a {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f4f8;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+}
+
+header {
+    padding: 20px 20px 10px 20px;
+    background-color: #f9fafb;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.header-top {
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.header-top h1 {
+    display: inline-block;
+    font-size: 22px;
+    color: #2d3748;
+    width: 38%;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a5568;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #3164e7;
+    color: #ffffff;
+}
+
+.intro-text {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+    padding: 0 5px;
+}
+
+.content-wrapper {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.icerik {
+    display: inline-block;
+    width: 48.5%;
+    background-color: #d0b64d;
+    padding: 20px;
+    border: 1px solid #debb2f;
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+.yan-menu {
+    display: inline-block;
+    width: 48.5%;
+    background-color: #319de4;
+    padding: 20px;
+    border: 1px solid #36a7e4;
+    border-radius: 4px;
+    margin-left: 2%;
+    vertical-align: top;
+}
+
+.icerik h2, .yan-menu h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.content-wrapper p {
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #e5e7eb;
+}
+
+footer p {
+    font-size: 12px;
+    color: #6b7280;
+}
