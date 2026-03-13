@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim - Kişisel Portfolyo</title>
+    <link rel="stylesheet" href="hafta3-css.css">
 </head>
 <body>
     <header>
@@ -48,8 +49,63 @@
                 <dd>Hafta içi her gün</dd>
             </dl>
         </section>
-    </main>
 
+        <div class="contact-container">
+            <h2 style="text-align: center;">Detaylı İletişim Formu</h2>
+            
+            <form action="#" method="POST">
+                
+                <label for="fullname">Ad Soyad:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Örn: Asaf Karataş" required>
+
+                <label for="email">E-posta Adresi:</label>
+                <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>
+
+                <label for="password">Başvuru Takip Şifresi:</label>
+                <input type="password" id="password" name="password" placeholder="Şifrenizi girin">
+
+                <label>İletişim Tercihi:</label>
+                <div class="group-box">
+                    <input type="radio" id="pref-email" name="contact_pref" value="email" checked>
+                    <label for="pref-email" class="inline-label">Bana e-posta ile ulaşın</label><br>
+                    <input type="radio" id="pref-phone" name="contact_pref" value="phone">
+                    <label for="pref-phone" class="inline-label">Bana telefonla ulaşın</label>
+                </div>
+
+                <label>İlgi Alanları / Yetenekler:</label>
+                <div class="group-box">
+                    <input type="checkbox" id="skill-html" name="skills" value="HTML">
+                    <label for="skill-html" class="inline-label">HTML</label><br>
+                    <input type="checkbox" id="skill-css" name="skills" value="CSS">
+                    <label for="skill-css" class="inline-label">CSS</label><br>
+                    <input type="checkbox" id="skill-algo" name="skills" value="Algoritma">
+                    <label for="skill-algo" class="inline-label">Algoritma</label>
+                </div>
+
+                <label for="subject">Konu:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Lütfen bir konu seçin...</option>
+                    <option value="job">İş Teklifi</option>
+                    <option value="question">Soru</option>
+                    <option value="feedback">Geri Bildirim</option>
+                </select>
+
+                <label for="file_upload">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
+                <div style="margin-bottom: 20px;">
+                    <input type="file" id="file_upload" name="file_upload" style="width: auto;">
+                </div>
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..." required></textarea>
+
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Gönder</button>
+                    <button type="reset" class="reset-btn">Temizle</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
     <hr>
 </body>
 </html>
