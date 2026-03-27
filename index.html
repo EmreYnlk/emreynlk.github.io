@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Sayfa - Kişisel Portfolyo</title>
     <link rel="stylesheet" href="hafta2-css-odevi.css">
+    <style>
+        /* Bağlantılar kısmındaki fontu büyütmek ve alt alta dizmek için eklenen CSS */
+        .yan-menu ul {
+            list-style-type: none; /* Noktaları kaldırır */
+            padding: 0;
+        }
+
+        .yan-menu ul li {
+            margin-bottom: 10px; /* Linkler arası boşluk bırakır */
+        }
+
+        .yan-menu ul li a {
+            font-size: 1.2rem; /* Fontu büyütür (yaklaşık 19-20px) */
+            text-decoration: none;
+            display: block; /* Tıklanabilir alanı genişletir ve alt alta dizilmeyi garantiler */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -26,19 +43,17 @@
             <section class="icerik">
                 <h2>Hoş Geldiniz!</h2>
                 <p>Ben Emre. Bu site, Web Programlama dersi kapsamında tamamen HTML ve CSS kullanılarak oluşturduğum kişisel web sayfamdır.</p>
-                </section>
+            </section>
 
             <aside class="yan-menu">
                 <h2>Bağlantılar</h2>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="about.html">Hakkımda</a></li>
-                        <li><a href="interests.html">İlgi Alanlarım</a></li>
-                        <li><a href="contact.html">İletişim</a></li>
-                        <li><a href="flexbox.html">Flexbox</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                    <li><a href="interests.html">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="flexbox.html">Flexbox</a></li>
+                </ul>
             </aside>
         </main>
 
