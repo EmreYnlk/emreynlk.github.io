@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa - Emre Yanalak Portfolyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .main-container {
+            background-color: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+            padding: 4.5rem 3rem;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .week-card {
+            border: 1px solid #dee2e6;
+            border-radius: 1rem;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease-in-out;
+            display: block;
+            height: 100%;
+            background-color: #ffffff;
+        }
+
+        .week-card:hover {
+            border-color: #4f46e5;
+            background-color: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+        }
+
+        .week-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+            color: #1e293b;
+        }
+
+        .week-desc {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #475569;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #4f46e5;
+        }
+        
+        .navbar-brand {
+            color: #4f46e5 !important;
+            letter-spacing: -0.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                Emre Yanalak
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="topNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Hakkımda</a></li>
+                    <li class="nav-item"><a href="interests.html" class="nav-link">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="main-container text-center">
+
+                    <span
+                        class="badge rounded-pill text-bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3 fw-medium">
+                        Web Programlama Dersi
+                    </span>
+                    <h1 class="display-5 fw-bold mb-3 text-dark">Web Programlama Portfolyo</h1>
+                    <p class="lead text-secondary mb-5 mx-auto" style="max-width: 700px;">
+                        Ben Emre. Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Bu sayfa, web
+                        programlama dersi kapsamında geliştirdiğim laboratuvar uygulamalarına ve kişisel projelerime
+                        giriş için hazırlanmıştır.
+                    </p>
+
+                    <div id="lab-grid" class="row g-3 justify-content-center text-start">
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="eskiindex.html" class="week-card">
+                                <div class="week-title">Hafta 1</div>
+                                <div class="week-desc">GitHub Pages</div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="odevler.html" class="week-card">
+                                <div class="week-title">Hafta 2</div>
+                                <div class="week-desc">HTML + CSS</div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="contact.html" class="week-card">
+                                <div class="week-title">Hafta 3</div>
+                                <div class="week-desc">Form Yapıları</div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="flexbox.html" class="week-card">
+                                <div class="week-title">Hafta 4</div>
+                                <div class="week-desc">CV (Flexbox)</div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="lab-position.html" class="week-card">
+                                <div class="week-title">Hafta 5</div>
+                                <div class="week-desc">Yaklaşan Etkinlikler</div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="miniapps.html" class="week-card">
+                                <div class="week-title">Hafta 6</div>
+                                <div class="week-desc">Mini Uygulamalar</div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <a href="hafta7.html" class="week-card">
+                                <div class="week-title">Hafta 7</div>
+                                <div class="week-desc">Dost Geri Bildirim</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
